@@ -21,7 +21,7 @@ public class Movimiento : MonoBehaviour
         
         transform.Translate( new Vector3(0 ,0, -1) * velocidad * Time.deltaTime );
         //transform.rotation()
-
+        
         
     }
 }
