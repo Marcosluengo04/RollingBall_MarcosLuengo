@@ -8,6 +8,7 @@ public class Movimiento : MonoBehaviour
 
 {
     [SerializeField] float fuerzasalto;
+    [SerializeField] float velocidad;
     Rigidbody rb;
     
     //[SerializeField] int velocidad = 2;
@@ -33,9 +34,20 @@ public class Movimiento : MonoBehaviour
         //transform.Rotate(direccionRot * velRot * Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.W))
         {
-            rb.AddForce(new Vector3(0, 0, 1) * fuerzasalto, ForceMode.Impulse);
+            rb.AddForce(new Vector3(0, 0, 1) * velocidad, ForceMode.Impulse);
         }
-
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            rb.AddForce(new Vector3(0, 0, -1) * velocidad, ForceMode.Impulse);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            rb.AddForce(new Vector3(-1, 0, 0) * velocidad, ForceMode.Impulse);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            rb.AddForce(new Vector3(1, 0, 0) * velocidad, ForceMode.Impulse);
+        }
         //transform.rotation()
 
 
