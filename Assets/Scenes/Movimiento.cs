@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -9,6 +10,8 @@ public class Movimiento : MonoBehaviour
 {
     [SerializeField] float fuerzasalto;
     [SerializeField] float velocidad;
+    
+    
     Rigidbody rb;
     
     //[SerializeField] int velocidad = 2;
@@ -30,6 +33,7 @@ public class Movimiento : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         { 
              rb.AddForce(new Vector3( 0, 1, 0 ) * fuerzasalto,ForceMode.Impulse);
+            
         }
         //transform.Rotate(direccionRot * velRot * Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.W))
@@ -52,4 +56,21 @@ public class Movimiento : MonoBehaviour
 
 
     }
-}
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("suelotp"))
+        {
+            Teleport();
+        }
+    }
+
+    private void Teleport()
+    {
+        transform.position = new Vector3 (134, 7, -18);
+    
+    }
+
+
+
+
+}   
