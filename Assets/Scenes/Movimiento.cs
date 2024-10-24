@@ -39,19 +39,11 @@ public class Movimiento : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             rb.AddForce(new Vector3(0, 0, 1) * velocidad, ForceMode.Impulse);
+
         }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            rb.AddForce(new Vector3(0, 0, -1) * velocidad, ForceMode.Impulse);
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            rb.AddForce(new Vector3(-1, 0, 0) * velocidad, ForceMode.Impulse);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            rb.AddForce(new Vector3(1, 0, 0) * velocidad, ForceMode.Impulse);
-        }
+        rb.AddForce(new Vector3(h, 0, 0) * velocidad, ForceMode.Force);
+        rb.AddForce(new Vector3(0, 0, v) * velocidad, ForceMode.Force);
+
         //transform.rotation()
 
 

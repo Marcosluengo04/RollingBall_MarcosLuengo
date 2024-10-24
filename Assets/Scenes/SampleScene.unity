@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuerzasalto: 15
-  velocidad: 6
+  velocidad: 3
 --- !u!96 &324280670
 TrailRenderer:
   serializedVersion: 3
@@ -1222,8 +1222,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22617272, y: 0.17114937, z: -0.04040292, w: 0.9580822}
-  m_LocalPosition: {x: -3.284905, y: 12.374282, z: -30.652603}
+  m_LocalRotation: {x: 0.22975296, y: -0.000000008619329, z: 0.0000000020347477, w: 0.973249}
+  m_LocalPosition: {x: -1.9, y: 12.374282, z: -30.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1371,8 +1371,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369350455}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22617254, y: 0.17114933, z: -0.04040287, w: 0.95808226}
-  m_LocalPosition: {x: -3.284905, y: 12.374282, z: -30.652603}
+  m_LocalRotation: {x: 0.22975293, y: -0.000000008770753, z: 0.0000000026761897, w: 0.973249}
+  m_LocalPosition: {x: -1.9, y: 12.374282, z: -30.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4515,9 +4515,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 5
+  m_BindingMode: 4
   m_FollowOffset: {x: 0, y: 2, z: -4}
-  m_XDamping: 1
+  m_XDamping: 0
   m_YDamping: 1
   m_ZDamping: 1
   m_AngularDampingMode: 0
@@ -4877,7 +4877,7 @@ Transform:
   m_GameObject: {fileID: 1741102322}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 134, y: 7.03, z: -18}
+  m_LocalPosition: {x: 134, y: 5.2, z: -18}
   m_LocalScale: {x: 8.23, y: 0.094541, z: 9.968142}
   m_ConstrainProportionsScale: 0
   m_Children: []
