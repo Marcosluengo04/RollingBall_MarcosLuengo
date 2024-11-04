@@ -58,7 +58,7 @@ public class Movimiento : MonoBehaviour
 
     private void Teleport()
     {
-        transform.position = new Vector3 (134, 7, -18);
+        transform.position = new Vector3 (138.3f, 7.43f, -22.97f);
     
     }
 
