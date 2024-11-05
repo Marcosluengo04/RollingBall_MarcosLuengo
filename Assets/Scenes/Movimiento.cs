@@ -10,6 +10,9 @@ public class Movimiento : MonoBehaviour
 {
     [SerializeField] float fuerzasalto;
     [SerializeField] float velocidad;
+     float h;
+     float v;
+    Vector3 miVector = new Vector3 (0, 1, 0);
     
     
     Rigidbody rb;
@@ -28,25 +31,20 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
+        h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
         if (Input.GetKeyDown(KeyCode.Space))
         { 
              rb.AddForce(new Vector3( 0, 1, 0 ) * fuerzasalto,ForceMode.Impulse);
             
         }
-        //transform.Rotate(direccionRot * velRot * Time.deltaTime);
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            rb.AddForce(new Vector3(0, 0, 1) * velocidad, ForceMode.Impulse);
-
-        }
+        
+      
+    }
+    void FixedUpdate()
+    {
         rb.AddForce(new Vector3(h, 0, 0) * velocidad, ForceMode.Force);
         rb.AddForce(new Vector3(0, 0, v) * velocidad, ForceMode.Force);
-
-        //transform.rotation()
-
-
     }
     private void OnCollisionEnter(Collision collision)
     {
