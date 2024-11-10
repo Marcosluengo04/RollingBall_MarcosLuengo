@@ -52,12 +52,21 @@ public class Movimiento : MonoBehaviour
         {
             Teleport();
         }
+        else if (collision.gameObject.CompareTag("suelotp2"))
+        {
+            Teleport2();
+        }
     }
 
     private void Teleport()
     {
         transform.position = new Vector3 (138.3f, 7.43f, -22.97f);
     
+    }
+    private void Teleport2()
+    {
+        transform.position = new Vector3(-7.140007f, 12.5f, -26.8f);
+
     }
 
 
