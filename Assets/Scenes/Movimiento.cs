@@ -35,7 +35,7 @@ public class Movimiento : MonoBehaviour
         v = Input.GetAxisRaw("Vertical");
         if (Input.GetKeyDown(KeyCode.Space))
         { 
-             rb.AddForce(new Vector3( 0, 1, 0 ) * fuerzasalto,ForceMode.Impulse);
+             rb.AddForce(new Vector3( 0, 0, 0 ) * fuerzasalto,ForceMode.Impulse);
             
         }
         

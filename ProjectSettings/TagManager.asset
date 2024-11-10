@@ -7,6 +7,7 @@ TagManager:
   - suelotp
   - Ball
   - suelotp2
+  - Puerta
   layers:
   - Default
   - TransparentFX
